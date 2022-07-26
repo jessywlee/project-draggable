@@ -37,7 +37,7 @@ const Draggable = ({ children }: Props) => {
 			translate.y = heightLimit;
 		};
 
-		eventTarget.style.transform =
+    eventTarget.style.transform =
 			"translate(" + translate.x + "px, " + translate.y + "px)";
   };
   
