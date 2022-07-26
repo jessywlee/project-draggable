@@ -1,4 +1,4 @@
-import './App.css';
+import './css/App.css';
 import Box from "./Box";
 import Draggable from "./Draggable";
 
