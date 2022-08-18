@@ -53,7 +53,6 @@ const Draggable = ({ children }: Props) => {
   const removeDrag = (event: React.MouseEvent<HTMLDivElement>) => {
     event.preventDefault();
     const eventTarget = event.currentTarget as HTMLElement;
-    
 		eventTarget.removeEventListener("mousemove", dragElement);
   };
 
@@ -66,7 +65,9 @@ const Draggable = ({ children }: Props) => {
     className="draggable"
     draggable="true"
     onMouseDown={addDrag}
-    onMouseUp={removeDrag}>
+    onMouseUp={removeDrag}
+    onMouseOut={removeDrag}
+    >
     {children}
   </div>
   )
